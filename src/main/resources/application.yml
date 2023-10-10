@@ -1,0 +1,13 @@
+server:
+  port: 8080                   # Specify the port on which Tomcat will listen
+  servlet:
+    context-path: /note-taker       # Define the context path for your application
+  compression:
+    enabled: true              # Enable response compression
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json # Mime types to compress
+  tomcat:
+    accesslog:
+      enabled: true            # Enable Tomcat access logs
+      pattern: common          # Use the "common" log format
+  connector:
+    max-http-header-size: 8KB  # Maximum size of HTTP headers
